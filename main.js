@@ -137,15 +137,7 @@ class Field {
     }
 }
 
-console.log(Field.generateField(4,4,0.2));
-
-const myField = new Field([
-  ['*', '░', 'O'],
-  ['░', 'O', '░'],
-  ['░', '^', '░'],
-]);
-
-
+const myField = new Field(Field.generateField(4,4,0.2));
 while(true)
 {
     myField.print();
